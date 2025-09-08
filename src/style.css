@@ -1,7 +1,10 @@
 body {
-  color: white;
   font-family: poppins, sans-serif;
   background: black;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 header h1 {
   font-weight: 700;
@@ -35,31 +38,31 @@ header a {
 }
 header {
   max-width: 1400px;
+  margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url("../images/beto-background.png");
-  margin: 0 auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   padding: 180px 0;
+  color: white;
 }
 footer {
-  padding: 10px;
   max-width: 1400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url("../images/footer-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
+  color: white;
 }
 footer ul {
   padding: 0;
 }
 footer li {
   list-style: none;
-  margin: 0;
+
   padding: 0;
 }
 footer a {
@@ -72,18 +75,47 @@ footer p {
   opacity: 0.7;
   line-height: 22px;
   text-align: justify;
+  color: white;
 }
-.boxes {
+.grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.box {
+  max-width: 1400px;
+  padding: 100px 50px;
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+.boxes {
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 60px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  background-color: white;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: justify;
+}
+section img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+main h3 {
+  color: #bebcc7;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+.title-small-screen {
+  display: none;
 }
 @media (max-width: 900px) {
   header h1 {
@@ -98,5 +130,25 @@ footer p {
   header a {
     font-size: 7px;
     padding: 8px 16px;
+  }
+  main h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  main h3 {
+    margin: 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding: 50px;
+  }
+
+  .title-big-screen {
+    display: none;
+  }
+  .title-small-screen {
+    display: grid;
+    text-align: center;
   }
 }
