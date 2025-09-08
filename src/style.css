@@ -94,6 +94,7 @@ footer .grid {
   justify-content: center;
   height: 100%;
   grid-gap: 30px;
+  margin: 0 auto;
 }
 .boxes {
   grid-template-columns: 1fr 2fr 2fr;
@@ -101,6 +102,7 @@ footer .grid {
 }
 .grid-2-columns {
   display: grid;
+  margin: 0 auto;
   grid-template-columns: 1fr 1fr;
 }
 .grid-3-columns {
@@ -120,8 +122,15 @@ img {
   display: block;
   margin: 0 auto;
 }
+iframe {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+}
 section h3 {
   margin: 0;
+}
+main img {
+  max-width: 80%;
 }
 main h3 {
   color: #bebcc7;
@@ -142,9 +151,9 @@ main h2 {
 .card {
   background-color: white;
 }
-.secondary image {
-  width: 100%;
-  margin: 0;
+.secondary img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
 }
 button {
   display: block;
@@ -172,6 +181,11 @@ a {
 }
 .card-footer {
   padding: 25px;
+}
+.card header .grid-2-columns {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
 }
 @media (max-width: 900px) {
   header h1 {
@@ -205,6 +219,31 @@ a {
   }
   .title-small-screen {
     display: grid;
+    text-align: center;
+  }
+  .secondary {
+    padding: 0 50px;
+  }
+  .grid-3-columns {
+    padding: 0 50px;
+  }
+  .secondary h3 {
+    padding-top: 20px;
+  }
+  .card-header.grid-2-columns img {
+    max-width: 60%;
+    margin-top: 10px;
+  }
+  .card-header.grid-2-columns {
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-gap: 20px;
+  }
+  iframe {
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+  }
+  .card-body h4 {
     text-align: center;
   }
 }
