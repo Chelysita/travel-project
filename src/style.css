@@ -76,7 +76,7 @@ footer p {
 .boxes {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 40px;
+  grid-gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
 }
