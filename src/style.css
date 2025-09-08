@@ -34,7 +34,7 @@ header a {
   border-radius: 2px;
 }
 header {
-  max-width: 1200px;
+  max-width: 1400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url("../images/beto-background.png");
   margin: 0 auto;
@@ -44,7 +44,47 @@ header {
   text-align: center;
   padding: 180px 0;
 }
-
+footer {
+  padding: 10px;
+  max-width: 1400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 22px;
+  text-align: justify;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.box {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 @media (max-width: 900px) {
   header h1 {
     font-size: 45px;
