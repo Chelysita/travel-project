@@ -6,6 +6,9 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.text-center {
+  text-align: center;
+}
 header h1 {
   font-weight: 700;
   font-size: 96px;
@@ -77,20 +80,32 @@ footer p {
   text-align: justify;
   color: white;
 }
+h4 {
+  margin: 0;
+  font-size: 24px;
+}
+footer .grid {
+  padding: 50px 50px;
+}
 .grid {
   display: grid;
   max-width: 1400px;
   padding: 100px 50px;
-  align-items: center;
   justify-content: center;
   height: 100%;
+  grid-gap: 30px;
 }
 .boxes {
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 60px;
 }
 .grid-2-columns {
+  display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 10px;
 }
 
 section {
@@ -98,11 +113,15 @@ section {
   max-width: 1400px;
   margin: 0 auto;
   text-align: justify;
+  padding: 100px;
 }
-section img {
-  width: 80%;
+img {
+  max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+section h3 {
+  margin: 0;
 }
 main h3 {
   color: #bebcc7;
@@ -116,6 +135,43 @@ main h2 {
 }
 .title-small-screen {
   display: none;
+}
+.secondary {
+  background-color: #f8f8f8;
+}
+.card {
+  background-color: white;
+}
+.secondary image {
+  width: 100%;
+  margin: 0;
+}
+button {
+  display: block;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 2px 16px;
+  height: 32px;
+  min-width: 60px;
+  min-height: 32px;
+  border: none;
+  color: #fff;
+  background-color: #4f545c;
+  transition: background-color 0.17s ease, color 0.17s ease;
+}
+a {
+  text-decoration: none;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 25px;
 }
 @media (max-width: 900px) {
   header h1 {
